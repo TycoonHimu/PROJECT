@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.dropbtn {
+  background-color: grey;
+  color: rgb(248, 242, 242);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: grey;}
+    
+    .navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: grey;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: red;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+        
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "C:\Users\hp\Desktop\IWT\web\logo.png">
+			</div>
+			<li><a href="C:\Users\hp\Desktop\IWT\web\HH.HTML">Home</a></li>
+			<li><div class="dropdown">
+				<button class="dropbtn">Blog</button>
+				<div class="dropdown-content">
+				  <a href="https://www.investopedia.com/terms/s/stockmarket.asp">What is Stock Market?</a>
+				  <a href="https://www.investopedia.com/ask/answers/108.asp">How to Buy sell Stocks?</a>
+				  <a href="https://www.investopedia.com/investing/what-owning-stock-actually-means/">What Owning a Stock Actually Means</a> 
+				  <a href="https://www.investopedia.com/ask/answers/12/difference-investing-trading.asp">Investing vs. Trading: What's the Difference?</a>
+				</div>
+			  </div></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="C:\Users\hp\Desktop\IWT\web\ABOUT.HTML">About us</a></li>
+			<li><a href="#contact">Contact us</a></li>
+			
+			
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Hello visiters,welcome to our website, if you are here 
+	  you must be intrested in Financial management. We build this Website <b>FINANCE MASTER</b> 
+	for the purpose<br> of providing the right information to our viewers about the financial world, we have a
+	 strong team who does a solid research. Finance Master is currently a basic website build as a<br> college project.
+	We currently have a team  of only 4 members and currently developing our website. Our strong moto of<br> building this website
+is to spread the financial knowledge among the college students. In today's world managing our finance is very essential because every one
+earn money but fails to attain the goal of managing the financial goal.
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\hp\Desktop\IWT\web\image\Himanshu Shekhar.jpg" alt="himanshu" style="width:25%">
+      <div class="container">
+        <h2>HIMANSHU SHEKHAR</h2>
+        <p class="title">TEAM </p>
+        <p>WEBSITE DESIGNER </p>
+        <p>himanshu1722.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\hp\Desktop\IWT\web\image\gyan gourab.jpeg" alt="GOURAV" style="width:25% ">
+      <div class="container">
+        <h2>GYAN GOURAV</h2>
+        <p class="title">TEAM </p>
+        <p>TEAM ADMIN</p>
+        <p>gyan1707.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\hp\Desktop\IWT\web\image\dhruv.jpeg" alt="DHRUV" style="width:25%">
+      <div class="container">
+        <h2>DHRUV GARG</h2>
+        <p class="title">TEAM</p>
+        <p>NAVIGATION DESIGNER</p>
+        <p>dhruv1688.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\hp\Desktop\IWT\web\image\ocean.jpeg" alt="ocean" style="width:25%">
+      <div class="container">
+        <h2>OCEAN GAUTAM</h2>
+        <p class="title">TEAM</p>
+        <p>CONTENT FINDER</p>
+        <p>Ocean1780.be21@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="background">
+  <p class="text-footer">
+    contact us:<br> Chitkara University hg 26 be cse 1st year
+    <br>email: himanshu1722.be21@chitkara.edu.in
+    <br>	gyan1707.be21@chitkara.edu.in
+      <br> ocean780.BE21@chitkara.edu.in
+      <br> dhruv1688.BE21@chitkara.edu.in
+    
+  </p>
+
+
+</footer>
+</body>
+</html>
