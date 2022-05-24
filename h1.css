@@ -1,0 +1,40 @@
+h1 {
+  margin-top: 50px;
+}
+
+.animation {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  border: 12px solid blue;
+  animation: square-to-circle 4s  infinite ;
+}
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:black;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:25% 25% 25% 25%;
+    background:red;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 50% 50%;
+    background:yellow;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:75% 75% 75% 75%;
+    background:orange;
+    transform:rotate(180deg);
+  }
+  100% {  
+    border-radius:100% 100% 100% 100%;
+    background:black;
+    transform:rotate(360deg);
+  }

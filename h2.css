@@ -1,0 +1,38 @@
+
+
+.triangle {
+  display: inline-flex;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  animation-name: testframe;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes testframe {
+/*circle*/
+  0% {
+    width: 1000px;
+    height: 1000px;
+    background-color:red;
+    border-radius: 50%;
+  }
+/*triangle*/
+  50% {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 500px;
+    border-left-width: 500px;
+    border-bottom: 1000px solid Black;
+    background-color: transparent;
+  }
+/*square*/
+  100% {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+  }
